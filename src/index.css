@@ -2,11 +2,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    color: #412234;
 }
 
 .header-con {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #EAD7D7;
 }
 
 .name {
@@ -52,17 +56,44 @@ body {
 }
 
 a {
-    color: black;
+    color: #412234;
     text-decoration: none;
 }
 
-.picture-con {
-    width:50%;
+.bio-and-tech {
+    display:flex;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 20px;
 }
 
-#personal-picture {
-    width:80%;
+.bio-con {
+    width:50%;
+    margin-right: 5%;
+}
+
+.bio-header {
+    font-size: 200%;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.bio-copy {
+    font-size: 125%;
+    opacity: 80%;
+}
+
+.tech-con {
+    width:50%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5%;
+    height:fit-content;
+}
+
+.tech-icons {
+    width: 20%;
     height: auto;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin: 5px;
 }
