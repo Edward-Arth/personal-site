@@ -1,18 +1,23 @@
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
 import Projects from "./Projects";
 import { useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
 
 const AboutMe = () => {
+
     const [showProjects, setShowProjects] = useState(false);
+
     const handleProjectButton = () => {
         setShowProjects(true);
     };
+
     const handleAboutButton = () => {
         setShowProjects(false);
     }
+
     return (
         <>
-            {showProjects ? (
+            <CSSTransition in={showProjects} timeout={500} classNames="slide2" unmountOnExit>
                 <div className="projects-con">
                     <div className="about-button-con">
                         <button className="projects-button" onClick={handleAboutButton}>
@@ -22,7 +27,8 @@ const AboutMe = () => {
                     </div>
                     <Projects/>
                 </div>
-            ) : (
+            </CSSTransition>
+            <CSSTransition in={!showProjects} timeout={500} classNames="slide" unmountOnExit>
                 <div className="about-con">
                     <div className="bio-and-tech">
                         <div className="bio-con">
@@ -31,7 +37,7 @@ const AboutMe = () => {
                                 <p>{"I'm a philosophy graduate and a self-taught programmer."}</p>
                                 <p>{"I build full-stack web applications for fun, and aim to become a professional!"}</p>
                                 <p>{"In my free time, I like to cook, workout, study Mandarin, and play games."}</p>
-        
+
                             </div>
                         </div>
                         <div className="tech-con">
@@ -60,7 +66,7 @@ const AboutMe = () => {
                         </button>
                     </div>
                 </div>
-            )}
+            </CSSTransition>
         </>
     )
 }
