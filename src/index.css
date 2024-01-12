@@ -5,39 +5,44 @@ body {
     color: #412234;
 }
 
+.about-con {
+    display:flex;
+    justify-content: space-between;
+}
+
 .header-con {
     display: flex;
-    justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #EAD7D7;
+    padding-left: 20%;
 }
 
 .name {
-    font-size: 500%;
+    font-size: 800%;
     text-align: center;
     font-weight: bolder;
 }
 
 .title {
-    font-size: 200%;
-    text-align: center;
+    font-size: 250%;
     opacity:80%;
 }
 
 .links-con {
     display:flex;
-    justify-content: center;
     margin-top: 10px;
 }
 
 .links {
-    font-size: 200%;
+    font-size: 300%;
     opacity: 60%;
     display:flex;
     flex-direction: column;
     align-items: center;
     width:50px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .link-text {
@@ -62,38 +67,53 @@ a {
 
 .bio-and-tech {
     display:flex;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    margin-top: 20px;
+    flex-direction: column;
+    padding-left: 20%;
+    margin-top:10px;
 }
 
 .bio-con {
-    width:50%;
-    margin-right: 5%;
+    line-height: 1.6;
+    margin-bottom: 5px;
 }
 
-.bio-header {
-    font-size: 200%;
-    font-weight: bolder;
-    margin-bottom: 15px;
+p {
+    margin:15px;
+    margin-left: 0;
 }
 
 .bio-copy {
-    font-size: 125%;
-    opacity: 80%;
-}
-
-.tech-con {
-    width:50%;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 5%;
-    height:fit-content;
+    font-size: 175%;
+    opacity: 65%;
 }
 
 .tech-icons {
-    width: 20%;
+    width: 100px;
     height: auto;
-    margin: 5px;
+    margin: 10px;
+    animation: moveIcons 10s linear infinite;
+}
+
+.tech-con {
+    display:flex;
+    width:450px;
+    overflow:hidden;
+}
+
+@keyframes moveIcons {
+    100% {
+        transform:translateX(-960px);
+    }
+}
+
+.projects-button {
+    background-color: white;
+    border-style: none;
+    font-size: 150%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10%;
+    padding-top:5%;
+    opacity:65%;
 }
