@@ -8,7 +8,7 @@ const Header = () => {
         <div className="header-con">
             <div className="name-title-links">
                 <div className="name">Edward Strahlendorf</div>
-                <div className="title">Junior Software Developer</div>
+                <div className="title">Full-Stack Developer</div>
                 <div className="links-con">
                     <a href='https://github.com/Edward-Arth' target="blank">
                         <div className="links">

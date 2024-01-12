@@ -3,11 +3,14 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     color: #412234;
+    background-color: #EAD7D7;
 }
 
 .about-con {
     display:flex;
     justify-content: space-between;
+    background-color: white;
+    padding-bottom: 5%;
 }
 
 .header-con {
@@ -60,7 +63,7 @@ body {
     opacity:100%;
 }
 
-a {
+ a {
     color: #412234;
     text-decoration: none;
 }
@@ -106,14 +109,64 @@ p {
     }
 }
 
+.projects-button-con {
+    padding-right: 7.5%;
+    padding-top: 7.5%;
+}
+
 .projects-button {
     background-color: white;
     border-style: none;
     font-size: 150%;
+    opacity:50%;
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding-right: 10%;
+}
+
+.projects-button:hover {
+    opacity: 100%;
+    cursor:pointer;
+}
+
+.about-button-con {
+    padding-left:2.5%;
     padding-top:5%;
-    opacity:65%;
+}
+
+.projects-con {
+    display:flex;
+    background-color: white;
+    padding-bottom: 5%;
+    padding-top:2.5%;
+}
+
+.projects-interior-con {
+    display:flex;
+    padding-left: 12.5%;
+    margin-bottom: 5px;
+}
+
+.project-square {
+    margin:20px;
+}
+
+.project-square:hover {
+    transform: scale(1.05);
+}
+
+.project-image-con {
+    border: 2px solid #412234;
+    box-shadow: 0 0 10px #412234;
+}
+
+.project-images {
+    width: 400px;
+    height:250px;
+}
+
+.project-name {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 150%;
 }
