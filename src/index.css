@@ -145,7 +145,7 @@ p {
 
 .projects-interior-con {
     display:flex;
-    padding-left: 8%;
+    padding-left: 10%;
     padding-top: 2%;
 }
 
@@ -172,6 +172,7 @@ p {
     text-align: center;
     margin-top: 10px;
     font-size: 1.8vw;
+    opacity: 65%;
 }
 
 .slide2-enter {
