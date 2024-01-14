@@ -10,7 +10,7 @@ body {
     display:flex;
     justify-content: space-between;
     background-color: white;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 
 .header-con {
@@ -46,7 +46,7 @@ body {
 }
 
 .link-text {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     opacity:0%;
     font-weight: bold;
 }
@@ -111,8 +111,8 @@ p {
 }
 
 .projects-button-con {
-    padding-right: 7.5%;
-    padding-top: 7.5%;
+    padding-right: 5%;
+    padding-top: 10%;
 }
 
 .projects-button {
@@ -131,22 +131,22 @@ p {
 }
 
 .about-button-con {
-    padding-left:7.5%;
-    padding-top:5%;
+    padding-left:5%;
+    padding-top:10%;
 }
 
 .projects-con {
     display:flex;
     background-color: white;
-    padding-top:2.5%;
     position: absolute;
     width:100%;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 
 .projects-interior-con {
     display:flex;
     padding-left: 8%;
+    padding-top: 2%;
 }
 
 .project-square {
@@ -165,13 +165,13 @@ p {
 
 .project-images {
     width: 100%;
-    height:14vw;
+    height:15vw;
 }
 
 .project-name {
     text-align: center;
     margin-top: 10px;
-    font-size: 150%;
+    font-size: 1.8vw;
 }
 
 .slide2-enter {
@@ -210,20 +210,32 @@ p {
     transition: transform 500ms;
 }
 
+.about-con, .projects-con {
+    height:485px;
+    min-height: fit-content;
+}
+
+@media (max-width:1100px) {
+    .project-square {
+        margin:10px;
+        width:35%;
+    }
+    .project-images {
+        height: 15vw;
+    }
+    .projects-interior-con {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0;
+    }
+}
+
 @media (max-width: 900px) {
     .header-con {
         padding-left: 5%;
     }
     .bio-and-tech {
         padding-left:5%;
-    }
-    .tech-con {
-        width:225px;
-        margin-top: 5px;
-    }
-    .tech-icons {
-        width:50px;
-        height:50px;
     }
     @keyframes moveIcons {
         100% {
@@ -256,15 +268,34 @@ p {
     .bio-copy {
         font-size: 22px;
     }
-
-    .projects-interior-con {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-left: 0;
-    }
     .about-button-con {
         padding-left: 0;
         padding-top: 20%;
+    }
+
+    .project-name {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 750px) {
+    .project-square {
+        margin:10px;
+        width:40%;
+    }
+    .project-images {
+        height: 25vw;
+    }
+}
+
+@media (max-width:600px) {
+    .tech-con {
+        width:225px;
+        margin-top: 5px;
+    }
+    .tech-icons {
+        width:50px;
+        height:50px;
     }
 }
 
@@ -274,9 +305,6 @@ p {
     }
     .bio-and-tech {
         padding-left:5%;
-    }
-    .about-con {
-        height: 52vh;
     }
     .name {
         font-size: 50px;
@@ -296,6 +324,23 @@ p {
     .projects-button-con {
         padding-right: 0;
         padding-top: 25%;
+    }
+
+    .project-name {
+        font-size: 15px;
+    }
+    .project-square {
+        width:50%;
+    }
+    .project-images {
+        height:22vw;
+    }
+
+    .about-button-con {
+        padding-top: 25%;
+    }
+    .projects-con {
+        padding-top: 0;
     }
 }
 
